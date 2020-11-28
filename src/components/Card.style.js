@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
 
-width: 20%;
+width: 400px;
 height: 450px;
 border: 0.0625rem solid rgba(0,0,0,0.2);
 border-radius: 5px;
@@ -11,7 +11,7 @@ display: flex;
 align-items: center;
 
 flex-direction: column;
-transition: 0.2s;
+transition: 0.4s;
 &:hover {
     transform: scale(1.1);
     box-shadow: 0.3rem 0.3rem 0.9rem rgba(0,0,0,0.1);

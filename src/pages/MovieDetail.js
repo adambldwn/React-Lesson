@@ -1,7 +1,9 @@
-import React from 'react'
+import {useParams} from 'react-router-dom';
 
 export const MovieDetail = () => {
-    console.log("detail")
+  const {id} = useParams();
+  console.log(id);
+    
     return (
         <div>
             <p>MovieDetail</p>

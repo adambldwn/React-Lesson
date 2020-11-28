@@ -10,7 +10,7 @@ export const NavBar = () => {
     return (
         <div style={{backgroundColor:'red'}}>
             <Link to="/"> Home </Link>
-            <StyledSearchInput type="text" placeholder="Lütfen aramak istediğiniz filmi giriniz" ref={inputRef} />
+            <StyledSearchInput type="text" placeholder="Lütfen aramak istediğiniz filmi giriniz" ref={inputRef}/>
             <StyledSearchButton onClick={() => setsearchQuery(inputRef?.current?.value)}> Search </StyledSearchButton>
         </div>
     )

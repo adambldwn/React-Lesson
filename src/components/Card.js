@@ -1,11 +1,19 @@
-import { CardContainer, StyledCardList, StyledText, StyledMovieImage, ContainerText, ContainerImage, ContainerButton } from './Card.style';
+import { CardContainer,
+        StyledText,
+        StyledMovieImage,
+        ContainerText,
+        ContainerImage,
+        ContainerButton } from './Card.style';
 
 const baseImageUrl = "https://image.tmdb.org/t/p/w500";
 
 
 
 export const Card = ({ MovieData }) => {
-
+    let noImage = "https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg"
+    let appImage = MovieData.poster_path ? baseImageUrl + MovieData.poster_path : noImage
+    
+    console.log(MovieData.poster_path)
 
     return (
 
@@ -16,7 +24,7 @@ export const Card = ({ MovieData }) => {
             </ContainerText>
 
             <ContainerImage>
-                <StyledMovieImage src={baseImageUrl + MovieData.poster_path} />
+                <StyledMovieImage src={appImage} />
             </ContainerImage>
 
             <ContainerButton>
